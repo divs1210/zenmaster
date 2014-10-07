@@ -6,14 +6,16 @@
 
   <div class="row-fluid">
     <div class="span9">
+      <ul>
       {% for poem in poems %}
-      <p> 
+      <li><p> 
         {% for line in poem %}
           {{line}}<br/>
         {% endfor %} 
-      </p>
+      </p></li>
       <br/>
       {% endfor %}
+      </ul>
     </div>
   </div>
 {% endblock %}
