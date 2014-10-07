@@ -1,15 +1,14 @@
 (ns zenmaster-site.routes.home
   (:require [compojure.core :refer :all]
             [zenmaster-site.layout :as layout]
-            [zenmaster-site.util :as util]))
+            [zenmaster-site.util :as util]
+            [selmer.parser :refer [render-file]])
+  (:use     [zenmaster.core :only (rand-poem)]))
 
 (defn home-page []
-  (layout/render
-    "home.html" {:content (util/md->html "/md/docs.md")}))
-
-(defn about-page []
-  (layout/render "about.html"))
+  (render-file "templates/home.html" 
+               {:poems (->> (repeatedly 10 rand-poem)
+                            (map #(clojure.string/split % #", ")))}))
 
 (defroutes home-routes
-  (GET "/" [] (home-page))
-  (GET "/about" [] (about-page)))
+  (GET "/" [] (home-page)))

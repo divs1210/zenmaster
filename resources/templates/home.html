@@ -1,14 +1,19 @@
 {% extends "templates/base.html" %}
 {% block content %}
   <div class="jumbotron">
-    <h1>Welcome to zenmaster-site</h1>
-    <p>Time to start building your site!</p>
-    <p><a class="btn btn-primary btn-lg" href="http://luminusweb.net">Learn more &raquo;</a></p>
+    <h1>Zenmaster YuShing says...</h1>
   </div>
 
   <div class="row-fluid">
     <div class="span9">
-    {{content|safe}}
+      {% for poem in poems %}
+      <p> 
+        {% for line in poem %}
+          {{line}}<br/>
+        {% endfor %} 
+      </p>
+      <br/>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}

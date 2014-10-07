@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# zenmaster-site
+# zenmaster
 
-FIXME
+Zenmaster YuShing breathes poetry drenched in esoteric wisdom.
 
 ## Prerequisites
 
@@ -17,10 +16,10 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2014 FIXME
-=======
+© Divyansh Prakash, 2014
+
+=========
 zenmaster
 =========
 
 Koan/poem generator
->>>>>>> b805103aeaa427157e2f8f3f20fc1ad68610617b
