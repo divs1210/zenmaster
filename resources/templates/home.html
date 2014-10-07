@@ -6,9 +6,9 @@
 
   <div class="row-fluid">
     <div class="span9">
-      <ul>
+      <ul class="list-group">
       {% for poem in poems %}
-      <li><p> 
+      <li class="list-group-item"><p> 
         {% for line in poem %}
           {{line}}<br/>
         {% endfor %} 
