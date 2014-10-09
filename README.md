@@ -1,12 +1,15 @@
 # zenmaster
 
-Zenmaster YuShing breathes poetry drenched in esoteric wisdom.
+[Zenmaster YuShing][1] breathes poetry drenched in esoteric wisdom.
+(The site may take long to load at times. Free server. Sorry.)
+
+[1]: http://yushing.herokuapp.com/
 
 ## Prerequisites
 
-You will need [Leiningen][1] 2.0 or above installed.
+You will need [Leiningen][2] 2.0 or above installed.
 
-[1]: https://github.com/technomancy/leiningen
+[2]: https://github.com/technomancy/leiningen
 
 ## Running
 
