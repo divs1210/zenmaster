@@ -2,7 +2,7 @@
   (:use [clojure.string :only (split join)]))
 
 (def big-text
-  (slurp "resources/big.txt"))
+  (slurp "resources/big2.txt"))
 
 (def sentences
   (re-seq #"[A-Za-z \']+[\.]" big-text))
@@ -22,6 +22,6 @@
 
 (defn rand-poem []
   (->> (shuffle short-sentence-db)
-       (take 3)
+       (take 4)
        (map #(join " " %))
        (join ", ")))
