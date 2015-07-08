@@ -6,9 +6,12 @@
   (:use     [zenmaster.core :only (rand-poem)]))
 
 (defn home-page []
-  (render-file "templates/home.html" 
+  (render-file "templates/home.html"
                {:poems (->> (repeatedly 10 rand-poem)
                             (map #(clojure.string/split % #", ")))}))
 
 (defroutes home-routes
   (GET "/" [] (home-page)))
+
+;; (use 'zenmaster-site.repl)
+;; (start-server)

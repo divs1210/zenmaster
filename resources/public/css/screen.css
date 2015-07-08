@@ -1,6 +1,13 @@
 html,
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	  font-family: 'Times New Roman', Helvetica, Arial, sans-serif;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 10px;
+}
+
+.poem {
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  background: rgb(255, 240, 255);
 }
