@@ -1,21 +1,21 @@
 {% extends "templates/base.html" %}
 {% block content %}
-<div class="jumbotron" style="text-align:center; background: rgb(243, 243, 243); padding-bottom: 20px; padding-top: 20px;">
+<div class="jumbotron">
     <h2>Zenmaster YuShing</h2>
 </div>
 
 <div class="row-fluid">
     <div class="span9">
-        <ul class="list-group" style="text-align:center; font-style: oblique; font-weight: bold; font-family: cursive;">
+        <ul class="list-group">
             {% for poem in poems %}
-            <li class="list-group-item poem"><p>
+            <li class="list-group-item"><p>
                 {% for line in poem %}
                     {{line}}<br/>
                 {% endfor %}
                 </p></li>
             <br/>
             {% endfor %}
-            <li class="list-group-item poem"><p>
+            <li class="list-group-item"><p>
                 <center><a href="https://github.com/divs1210/zenmaster/blob/master/src/zenmaster/core.clj"/>Read the Source</center>
             </li>
         </ul>
