@@ -8,11 +8,13 @@
     <div class="span9">
         <ul class="list-group">
             {% for poem in poems %}
-            <li class="list-group-item"><p>
+            <li class="list-group-item">
+                <b><p>
                 {% for line in poem %}
                     {{line}}<br/>
                 {% endfor %}
-                </p></li>
+                </b></p>
+            </li>
             <br/>
             {% endfor %}
             <li class="list-group-item"><p>
